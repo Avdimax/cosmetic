@@ -1,0 +1,17 @@
+{
+  "name": "رزالری | Rosallery — فروشگاه تخصصی زیبایی و آرایشی",
+  "short_name": "رزالری",
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FAF7F2",
+  "theme_color": "#C51F45",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

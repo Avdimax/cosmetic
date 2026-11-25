@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<script>
+try{var m=document.querySelector('meta[name="color-scheme"]'),q=new URLSearchParams(location.search).get("theme"),s=q==="light"||q==="dark"?q:localStorage.getItem("color-scheme");if(s==="light"||s==="dark")m.content=s;}catch(e){}
+</script>
+<meta name="theme-color" content="#FAF7F2">
+<title>فروشگاه و دسته‌بندی محصولات — رزالری | Rosallery</title>
+<meta name="description" content="خرید آنلاین لوازم آرایشی و مراقبت پوست اصل در رزالری با فیلتر برند، نوع پوست، جلوه نهایی و محدوده قیمت.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20261125-5">
+<link rel="stylesheet" href="pages.css?v=20261125-5">
+</head>
+<body data-page="shop">
+
+<a href="#main-content" class="skip-link visually-hidden">پرش به محتوای اصلی</a>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-perks">
+      <span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 7h11v8H2z"/><path d="M13 10h4.5L21 13.5V15h-8"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></svg>ارسال رایگان بالای ۸۰۰ هزار تومان</span>
+      <span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l7 2.5V11c0 4.8-3 7.6-7 9-4-1.4-7-4.2-7-9V5.5z"/><path d="M9 11.5l2 2 4-4"/></svg>تضمین ۱۰۰٪ اصالت و سیب سلامت</span>
+    </div>
+    <div class="topbar-links">
+      <a href="track-order.html">پیگیری سفارش</a>
+      <a href="faq.html">راهنمای خرید</a>
+    </div>
+  </div>
+</div>
+
+<header id="hdr">
+  <div class="container h-inner">
+    <a class="logo" href="index.html" aria-label="صفحه اصلی رزالری">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="20" cy="20" r="4.8"/><path d="M20 4v7M20 29v7M4 20h7M29 20h7M9 9l5 5M26 26l5 5M31 9l-5 5M14 26l-5 5"/></svg>
+      <span class="logo-t"><b>رزالری</b><i lang="en">ROSALLERY</i></span>
+    </a>
+    <nav class="main" aria-label="اصلی">
+      <div><a href="shop.html" aria-current="page">فروشگاه</a></div>
+      <div><a href="shop.html?deals=1">شگفت‌انگیز</a></div>
+      <div><a href="shop.html?new=1">تازه‌ها</a></div>
+      <div><a href="brands.html">برندها</a></div>
+      <div><a href="routine.html">مشاور روتین</a></div>
+      <div><a href="magazine.html">مجله زیبایی</a></div>
+    </nav>
+    <div class="h-icons">
+      <button type="button" class="icbtn" id="openSearch" aria-label="جستجو"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg></button>
+      <button type="button" class="icbtn hide-xs" id="openFav" aria-label="علاقه‌مندی‌ها"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 20.5S3.5 15.5 3.5 9.4A4.6 4.6 0 0 1 12 6.7a4.6 4.6 0 0 1 8.5 2.7c0 6.1-8.5 11.1-8.5 11.1z"/></svg><span class="badge js-fav-badge" style="display:none">۰</span></button>
+      <a class="icbtn hide-xs" href="account.html" aria-label="حساب کاربری"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1.2-3.6 4-5.5 7.5-5.5s6.3 1.9 7.5 5.5"/></svg><span class="user-dot js-user-dot" hidden></span></a>
+      <button type="button" class="icbtn" id="openCart" aria-label="سبد خرید"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5.5 8h13l-1.1 12.5H6.6z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="badge js-cart-badge" style="display:none">۰</span></button>
+      <button type="button" class="icbtn" id="openNav" aria-label="منو"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="مسیر صفحه">
+        <a href="index.html">خانه</a>
+        <span aria-hidden="true">/</span>
+        <span id="plpCrumb" aria-current="page">فروشگاه</span>
+      </nav>
+      <h1 id="plpTitle">فروشگاه جامع زیبایی رزالری</h1>
+      <p class="lead" id="plpLead">تمامی محصولات آرایش صورت، مراقبت پوست، لب، مو و ناخن از برترین برندهای دنیا.</p>
+    </div>
+  </section>
+
+  <div class="container plp-layout">
+    <aside class="filter-sidebar" id="filterSidebar" aria-label="فیلترهای محصولات"></aside>
+
+    <div>
+      <div class="plp-toolbar">
+        <div class="plp-tools-left">
+          <button type="button" class="btn ghost sm mobile-filter-btn" id="openFilterBtn">فیلترها</button>
+          <b id="plpCount" style="font-size:.9rem">۰ کالا</b>
+        </div>
+        <div class="plp-tools-right">
+          <label for="plpSort" class="visually-hidden">مرتب‌سازی بر اساس</label>
+          <select id="plpSort" class="sort-select">
+            <option value="featured">پیشنهاد رزالری</option>
+            <option value="bestseller">پرفروش‌ترین</option>
+            <option value="newest">جدیدترین</option>
+            <option value="discount">بیشترین تخفیف</option>
+            <option value="rating">محبوب‌ترین (امتیاز)</option>
+            <option value="price-asc">ارزان‌ترین</option>
+            <option value="price-desc">گران‌ترین</option>
+          </select>
+          <button type="button" class="pill-btn on" data-view="grid" aria-label="نمای شبکه‌ای">شبکه‌ای</button>
+          <button type="button" class="pill-btn" data-view="list" aria-label="نمای لیستی">لیستی</button>
+        </div>
+      </div>
+
+      <div class="active-chips" id="activeFilterChips"></div>
+      <div class="product-grid" id="plpGrid"></div>
+      <div style="text-align:center;margin-top:28px">
+        <button type="button" class="btn ghost" id="plpLoadMore" hidden>نمایش بیشتر</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Mobile Filter Drawer (<dialog>) -->
+<dialog class="rs-drawer" id="filterDialog" closedby="any" aria-labelledby="filterDialogTitle">
+  <div class="d-head">
+    <h1 id="filterDialogTitle">فیلتر محصولات</h1>
+    <button type="button" class="icbtn" data-close-dialog aria-label="بستن فیلترها" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <div class="d-body-scroll" id="mobileFilterBody"></div>
+  <div class="d-foot">
+    <button type="button" class="btn rose" data-close-dialog style="width:100%">مشاهده نتایج</button>
+  </div>
+</dialog>
+
+<footer class="orn-dark">
+  <div class="container">
+    <div class="f-grid">
+      <div class="f-about f-logo">
+        <a class="logo" href="index.html">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--blush)" aria-hidden="true"><circle cx="20" cy="20" r="4.8"/><path d="M20 4v7M20 29v7M4 20h7M29 20h7M9 9l5 5M26 26l5 5M31 9l-5 5M14 26l-5 5"/></svg>
+          <span class="logo-t"><b>رزالری</b><i lang="en">ROSALLERY</i></span>
+        </a>
+        <p>فروشگاه تخصصی آنلاین لوازم آرایشی، مراقبت پوست و زیبایی؛ با ضمانت اصالت و سیب سلامت.</p>
+      </div>
+      <div><h2>فروشگاه</h2><ul><li><a href="shop.html?cat=face">آرایش صورت</a></li><li><a href="shop.html?cat=skincare">مراقبت پوست</a></li><li><a href="shop.html?cat=lips">آرایش لب</a></li><li><a href="shop.html?cat=hair">مراقبت مو</a></li><li><a href="shop.html?cat=nails">آرایش ناخن</a></li></ul></div>
+      <div><h2>خدمات مشتریان</h2><ul><li><a href="track-order.html">پیگیری سفارش</a></li><li><a href="faq.html">سوالات متداول</a></li><li><a href="routine.html">مشاور روتین</a></li><li><a href="legal.html">قوانین و حریم خصوصی</a></li></ul></div>
+      <div><h2>با رزالری</h2><ul><li><a href="about.html">درباره ما</a></li><li><a href="brands.html">برندها</a></li><li><a href="magazine.html">مجله زیبایی</a></li><li><a href="contact.html">تماس با ما</a></li></ul></div>
+      <div><h2>ارتباط مستقیم</h2><div class="f-contact-list"><span>پشتیبانی: <b dir="ltr">۰۲۱-۹۱۰۰۴۵۸۰</b></span><span>ایمیل: <b dir="ltr">hello@rosallery.ir</b></span></div></div>
+    </div>
+    <div class="f-bottom"><small>© ۱۴۰۵ رزالری (Rosallery) — تمامی حقوق محفوظ است.</small><small class="f-credit">توسعه یافته توسط باران ویژوالز</small></div>
+  </div>
+</footer>
+
+<script src="data.js?v=20261125-5" defer></script>
+<script src="core.js?v=20261125-5" defer></script>
+<script src="pages.js?v=20261125-5" defer></script>
+</body>
+</html>

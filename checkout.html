@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<script>
+try{var m=document.querySelector('meta[name="color-scheme"]'),q=new URLSearchParams(location.search).get("theme"),s=q==="light"||q==="dark"?q:localStorage.getItem("color-scheme");if(s==="light"||s==="dark")m.content=s;}catch(e){}
+</script>
+<meta name="theme-color" content="#FAF7F2">
+<title>تسویه حساب و پرداخت — رزالری | Rosallery</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20261125-5">
+<link rel="stylesheet" href="pages.css?v=20261125-5">
+</head>
+<body data-page="checkout">
+
+<a href="#main-content" class="skip-link visually-hidden">پرش به محتوای اصلی</a>
+
+<header id="hdr">
+  <div class="container h-inner">
+    <a class="logo" href="index.html"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="20" cy="20" r="4.8"/><path d="M20 4v7M20 29v7M4 20h7M29 20h7M9 9l5 5M26 26l5 5M31 9l-5 5M14 26l-5 5"/></svg><span class="logo-t"><b>رزالری</b><i lang="en">ROSALLERY</i></span></a>
+    <nav class="main" aria-label="اصلی">
+      <div><a href="cart.html">بازگشت به سبد خرید</a></div>
+      <div><a href="shop.html">فروشگاه</a></div>
+      <div><a href="faq.html">راهنمای پرداخت و ارسال</a></div>
+    </nav>
+    <div class="h-icons">
+      <a class="icbtn hide-xs" href="account.html" aria-label="حساب کاربری"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1.2-3.6 4-5.5 7.5-5.5s6.3 1.9 7.5 5.5"/></svg></a>
+      <button type="button" class="icbtn" id="openNav" aria-label="منو"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="مسیر صفحه"><a href="index.html">خانه</a><span aria-hidden="true">/</span><a href="cart.html">سبد خرید</a><span aria-hidden="true">/</span><span aria-current="page">تسویه حساب</span></nav>
+      <h1>تکمیل سفارش و پرداخت امن</h1>
+    </div>
+  </section>
+
+  <div class="container" style="padding-top:28px">
+    <nav aria-label="مراحل تسویه حساب">
+      <ol class="stepper" id="checkoutStepper">
+        <li aria-current="step">۱. نشانی و گیرنده</li>
+        <li>۲. روش و زمان ارسال</li>
+        <li>۳. پرداخت و ثبت نهایی</li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="container checkout-layout" id="checkoutRoot" style="padding-top:10px"></div>
+</main>
+
+<footer class="orn-dark">
+  <div class="container">
+    <div class="f-bottom"><small>© ۱۴۰۵ رزالری (Rosallery) — پرداخت امن شاپرک و اقساطی اسنپ‌پی</small><small class="f-credit">توسعه یافته توسط باران ویژوالز</small></div>
+  </div>
+</footer>
+
+<script src="data.js?v=20261125-5" defer></script>
+<script src="core.js?v=20261125-5" defer></script>
+<script src="pages.js?v=20261125-5" defer></script>
+</body>
+</html>
