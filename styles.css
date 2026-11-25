@@ -188,6 +188,8 @@ nav.main>div:hover>a{background:var(--paper2)}
 .darksec .cnav button{border-color:var(--line);color:var(--ink)}
 .hscroll{display:flex;gap:13px;width:min(1240px,92vw);margin-inline:auto;overflow-x:auto;scroll-snap-type:x mandatory;padding:12px;background:var(--rose);border-radius:14px;scrollbar-width:none}
 .hscroll::-webkit-scrollbar{display:none}
+.hscroll,.catrow,.lscroll,.hero-cats{touch-action:pan-x pan-y pinch-zoom;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.hscroll img,.catrow img,.lscroll img{user-select:none;-webkit-user-drag:none}
 .cd-card{flex:none;width:182px;scroll-snap-align:start;background:var(--paper);color:var(--rose);border:1px solid var(--rose-gold);border-radius:999px 999px 22px 22px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:28px 16px;text-align:center}
 .cd-card .fd{font-size:1.45rem;font-weight:700;line-height:1.25}
 .cd-card>small{font-size:.68rem;opacity:.92}
@@ -426,6 +428,7 @@ footer{background:var(--ink);color:#D5B4AD;padding:54px 0 0}
   .hcat{min-width:150px;flex:none}
 }
 @media (max-width:640px){
+  .hscroll,.catrow,.lscroll{scroll-snap-type:x proximity}
   .sec{padding:48px 0}
   .darksec{padding:40px 0 48px}
   #new.darksec{padding-bottom:24px}

@@ -23,23 +23,23 @@ const P=[
 const BRANDS=[...new Set(P.map(p=>p.brand))];
 const DEAL_IDS=[5,13,6,3,1,15,7];
 const DEAL_IMAGES={
-  5:'assets/deal-lipstick-cherry.png',
-  13:'assets/deal-nail-polish.png',
-  6:'assets/deal-lipstick-rose.png',
-  3:'assets/deal-eyeshadow-palette.png',
-  1:'assets/deal-foundation.png',
-  15:'assets/deal-top-coat.png',
-  7:'assets/deal-lipstick-deep-red.png'
+  5:'assets/deal-lipstick-cherry.webp',
+  13:'assets/deal-nail-polish.webp',
+  6:'assets/deal-lipstick-rose.webp',
+  3:'assets/deal-eyeshadow-palette.webp',
+  1:'assets/deal-foundation.webp',
+  15:'assets/deal-top-coat.webp',
+  7:'assets/deal-lipstick-deep-red.webp'
 };
 const NEW_IDS=[2,8,12,14,7,4,15];
 const NEW_IMAGES={
-  2:'assets/new-serum.png',
-  8:'assets/new-lip-gloss.png',
-  12:'assets/new-hair-iron.png',
-  14:'assets/new-nail-gel.png',
-  7:'assets/new-lipstick.png',
-  4:'assets/new-mascara.png',
-  15:'assets/new-top-coat.png'
+  2:'assets/new-serum.webp',
+  8:'assets/new-lip-gloss.webp',
+  12:'assets/new-hair-iron.webp',
+  14:'assets/new-nail-gel.webp',
+  7:'assets/new-lipstick.webp',
+  4:'assets/new-mascara.webp',
+  15:'assets/new-top-coat.webp'
 };
 const MQ_BRANDS=['مای لیدر','لانکوم','اوردینری','مک','فلورمار','سیمور','لورال','رِولوشن','امیس','ماروکانویل','هدینگ بیوتی','لندا'];
 const CATS={
@@ -99,11 +99,11 @@ function bump(sel){const b=$(sel);b.classList.remove('bump');void b.offsetWidth;
 /* ---- 3. hero carousel ---- */
 const PANELS=['face','lips','hair','nails','nails'];
 const HERO_PROMOS={
- cherry:'assets/hero-lipgloss-cherry.png',
- cyan:'assets/hero-lipgloss-cyan.png',
- roseGold:'assets/hero-lipgloss-rose-gold.png',
- nailsCherry:'assets/hero-nails-cherry.png',
- nailsCyan:'assets/hero-nails-cyan.png'
+ cherry:'assets/hero-lipgloss-cherry.webp',
+ cyan:'assets/hero-lipgloss-cyan.webp',
+ roseGold:'assets/hero-lipgloss-rose-gold.webp',
+ nailsCherry:'assets/hero-nails-cherry.webp',
+ nailsCyan:'assets/hero-nails-cyan.webp'
 };
 const HSCENES=[
  HERO_PROMOS.cherry,
@@ -251,7 +251,7 @@ function initHeroCarousel() {
   });
 
   stage.addEventListener('pointerdown', event => {
-    if (!event.isPrimary || event.button !== 0) return;
+    if (!event.isPrimary || (event.pointerType === 'mouse' && event.button !== 0)) return;
     suppressClick = false;
     drag = {id:event.pointerId, x:event.clientX, y:event.clientY, active:false};
     syncAutoplay();
@@ -272,7 +272,7 @@ function initHeroCarousel() {
       drag.active = true;
       drag.origin = position;
       drag.returnTo = Math.round(position);
-      stage.setPointerCapture(event.pointerId);
+      if (event.pointerType === 'mouse') stage.setPointerCapture(event.pointerId);
       suppressClick = true;
     }
     const spacing = seats[1].x - seats[2].x;

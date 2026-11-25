@@ -5,7 +5,7 @@ window.KHANoumiProducts = [
     "brand": "گلدن رز",
     "priceToman": "570,000",
     "category": "lipstick",
-    "image": "assets/product-01.jpg",
+    "image": "assets/product-01.webp",
     "source": "https://www.khanoumi.com/products/golden-rose-velvet-matte-lipstick-15581"
   },
   {
@@ -14,7 +14,7 @@ window.KHANoumiProducts = [
     "brand": "این لی",
     "priceToman": "1,090,000",
     "category": "lipstick",
-    "image": "assets/product-02.jpg",
+    "image": "assets/product-02.webp",
     "source": "https://www.khanoumi.com/products/inlay-spf15-lipstick-28473"
   },
   {
@@ -23,7 +23,7 @@ window.KHANoumiProducts = [
     "brand": "گلدن رز",
     "priceToman": "524,999",
     "category": "lipstick",
-    "image": "assets/product-03.jpg",
+    "image": "assets/product-03.webp",
     "source": "https://www.khanoumi.com/products/golden-rose-matte-lipstick-4587"
   },
   {
@@ -32,7 +32,7 @@ window.KHANoumiProducts = [
     "brand": "شیگلم",
     "priceToman": "1,748,000",
     "category": "lipstick",
-    "image": "assets/product-04.jpg",
+    "image": "assets/product-04.webp",
     "source": "https://www.khanoumi.com/products/sheglam-pout-lipstick-74940"
   },
   {
@@ -41,7 +41,7 @@ window.KHANoumiProducts = [
     "brand": "کامفیز",
     "priceToman": "397,500",
     "category": "lipstick",
-    "image": "assets/product-05.jpg",
+    "image": "assets/product-05.webp",
     "source": "https://www.khanoumi.com/products/comfease-matte-lipstick-87394"
   },
   {
@@ -50,7 +50,7 @@ window.KHANoumiProducts = [
     "brand": "وانورا",
     "priceToman": "1,010,000",
     "category": "lipstick",
-    "image": "assets/product-06.jpg",
+    "image": "assets/product-06.webp",
     "source": "https://www.khanoumi.com/products/vanora-lip-color-lip-color-90048"
   },
   {
@@ -59,7 +59,7 @@ window.KHANoumiProducts = [
     "brand": "لیدو",
     "priceToman": "1,377,250",
     "category": "lipstick",
-    "image": "assets/product-07.jpg",
+    "image": "assets/product-07.webp",
     "source": "https://www.khanoumi.com/products/lido-silk-radiant-lipstick-87042"
   },
   {
@@ -68,7 +68,7 @@ window.KHANoumiProducts = [
     "brand": "ترو کاور",
     "priceToman": "399,000",
     "category": "lipstick",
-    "image": "assets/product-08.jpg",
+    "image": "assets/product-08.webp",
     "source": "https://www.khanoumi.com/products/true-cover-lip-liner-pencil-77757"
   },
   {
@@ -77,7 +77,7 @@ window.KHANoumiProducts = [
     "brand": "سوپر تاچ",
     "priceToman": "459,000",
     "category": "lipstick",
-    "image": "assets/product-09.jpg",
+    "image": "assets/product-09.webp",
     "source": "https://www.khanoumi.com/products/super-touch-pencil-lipstick-set-05-and-10-and-19-91062"
   },
   {
@@ -86,7 +86,7 @@ window.KHANoumiProducts = [
     "brand": "اشتون",
     "priceToman": "666,000",
     "category": "lipstick",
-    "image": "assets/product-10.jpg",
+    "image": "assets/product-10.webp",
     "source": "https://www.khanoumi.com/products/ashton-everlasting-lip-color-75903"
   },
   {
@@ -95,7 +95,7 @@ window.KHANoumiProducts = [
     "brand": "سوپر تاچ",
     "priceToman": "459,000",
     "category": "lipstick",
-    "image": "assets/product-11.jpg",
+    "image": "assets/product-11.webp",
     "source": "https://www.khanoumi.com/products/super-touch-pencil-lipstick-set-15-and-29-and-32-91064"
   },
   {
@@ -104,7 +104,7 @@ window.KHANoumiProducts = [
     "brand": "وانورا",
     "priceToman": "487,200",
     "category": "lipstick",
-    "image": "assets/product-12.jpg",
+    "image": "assets/product-12.webp",
     "source": "https://www.khanoumi.com/products/vanora-silky-lip-pen-90052"
   },
   {
@@ -113,7 +113,7 @@ window.KHANoumiProducts = [
     "brand": "سوپر تاچ",
     "priceToman": "459,000",
     "category": "lipstick",
-    "image": "assets/product-13.jpg",
+    "image": "assets/product-13.webp",
     "source": "https://www.khanoumi.com/products/super-touch-pencil-lipstick-set-02-and-11-and-17-91060"
   },
   {
@@ -122,7 +122,7 @@ window.KHANoumiProducts = [
     "brand": "سوپر تاچ",
     "priceToman": "459,000",
     "category": "lipstick",
-    "image": "assets/product-14.jpg",
+    "image": "assets/product-14.webp",
     "source": "https://www.khanoumi.com/products/super-touch-pencil-lipstick-set-04-and-08-and-16-91061"
   },
   {
@@ -131,7 +131,7 @@ window.KHANoumiProducts = [
     "brand": "وانورا",
     "priceToman": "607,800",
     "category": "lipstick",
-    "image": "assets/product-15.jpg",
+    "image": "assets/product-15.webp",
     "source": "https://www.khanoumi.com/products/vanora-super-matt-lipstick-90051"
   },
   {
@@ -140,7 +140,7 @@ window.KHANoumiProducts = [
     "brand": "سوپر تاچ",
     "priceToman": "459,000",
     "category": "lipstick",
-    "image": "assets/product-16.jpg",
+    "image": "assets/product-16.webp",
     "source": "https://www.khanoumi.com/products/super-touch-pencil-lipstick-set-03-and-08-and-22-91059"
   },
   {
@@ -149,7 +149,7 @@ window.KHANoumiProducts = [
     "brand": "گلدن رز",
     "priceToman": "849,999",
     "category": "lipstick",
-    "image": "assets/product-17.jpg",
+    "image": "assets/product-17.webp",
     "source": "https://www.khanoumi.com/products/golden-rose-matte-mini-lipstick-pack-65853"
   },
   {
@@ -158,7 +158,7 @@ window.KHANoumiProducts = [
     "brand": "نوت",
     "priceToman": "957,470",
     "category": "lipstick",
-    "image": "assets/product-18.jpg",
+    "image": "assets/product-18.webp",
     "source": "https://www.khanoumi.com/products/note-iconic-matte-solid-lipstick-113049"
   },
   {
@@ -167,7 +167,7 @@ window.KHANoumiProducts = [
     "brand": "مای",
     "priceToman": "429,170",
     "category": "lipstick",
-    "image": "assets/product-19.jpg",
+    "image": "assets/product-19.webp",
     "source": "https://www.khanoumi.com/products/my-semi-matt-chubby-stick-19761"
   },
   {
@@ -176,7 +176,7 @@ window.KHANoumiProducts = [
     "brand": "کالیستا",
     "priceToman": "472,050",
     "category": "lipstick",
-    "image": "assets/product-20.jpg",
+    "image": "assets/product-20.webp",
     "source": "https://www.khanoumi.com/products/callista-hydra-color-lipstick-19716"
   }
 ];
