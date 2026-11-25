@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FAF7F2">
+<link rel="stylesheet" href="styles.css">
+<title>رُزا بیوتی‌شاپ — فروشگاه آرایشی و بهداشتی</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="toasts"></div>
+
+<div class="topbar">
+  <div class="container">
+    <span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 7h11v8H2z"/><path d="M13 10h4.5L21 13.5V15h-8"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></svg>ارسال رایگان بالای ۸۰۰ هزار تومان</span>
+    <span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 2.5V11c0 4.8-3 7.6-7 9-4-1.4-7-4.2-7-9V5.5z"/><path d="M9 11.5l2 2 4-4"/></svg>ضمانت اصالت کالا</span>
+    <span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10a8 8 0 0 1 14-4l2 2M20 4v4h-4"/><path d="M20 14a8 8 0 0 1-14 4l-2-2M4 20v-4h4"/></svg>هفت روز بازگشت</span>
+  </div>
+</div>
+
+<header id="hdr">
+  <div class="container h-inner">
+    <a class="logo" href="#">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="20" r="4.5"/><path d="M20 4v7M20 29v7M4 20h7M29 20h7M9 9l5 5M26 26l5 5M31 9l-5 5M14 26l-5 5"/><circle cx="20" cy="6.5" r="1.6"/><circle cx="20" cy="33.5" r="1.6"/><circle cx="6.5" cy="20" r="1.6"/><circle cx="33.5" cy="20" r="1.6"/></svg>
+      <span class="logo-t"><b>رُزا</b><i>بیوتی‌شاپ</i></span>
+    </a>
+    <nav class="main">
+      <div class="has-mega">
+        <a href="#cats">فروشگاه</a>
+        <div class="mega">
+          <div>
+            <h4>آرایش صورت</h4>
+            <ul><li><a href="#" data-q="کرم‌پودر">کرم‌پودر</a></li><li><a href="#" data-q="سرم">سرم و کانسیلر</a></li><li><a href="#" data-q="پالت">سایه چشم</a></li><li><a href="#" data-q="ریمل">ریمل</a></li></ul>
+          </div>
+          <div>
+            <h4>آرایش لب</h4>
+            <ul><li><a href="#" data-q="رژ">رژ لب مات</a></li><li><a href="#" data-q="گلاس">لیپ‌گلاس</a></li><li><a href="#" data-q="شفاف">رژ شفاف</a></li></ul>
+          </div>
+          <div>
+            <h4>آرایش مو</h4>
+            <ul><li><a href="#" data-q="شامپو">شامپو</a></li><li><a href="#" data-q="ماسک">ماسک مو</a></li><li><a href="#" data-q="روغن">روغن مو</a></li></ul>
+          </div>
+          <div>
+            <h4>آرایش ناخن</h4>
+            <ul><li><a href="#" data-q="لاک">لاک ناخن</a></li><li><a href="#" data-q="ژل">لاک ژل</a></li><li><a href="#" data-q="تاپ">تاپ‌کیت</a></li></ul>
+          </div>
+          <div class="mega-promo">
+            <span class="mfill" id="megaImg"></span>
+            <div class="pcard2"><b>تا ۴۵٪ تخفیف آرایش لب</b><span>روزی که لوازم دلخواهت را بخر</span></div>
+          </div>
+        </div>
+      </div>
+      <div><a href="#deals">شگفت‌انگیز</a></div>
+      <div><a href="#new">تازه‌ها</a></div>
+      <div><a href="#khanoumiLipsticks">رژلب‌های خانومی</a></div>
+      <div><a href="#lines">خطوط و برندها</a></div>
+      <div><a href="#magazine">مجله</a></div>
+    </nav>
+    <div class="h-icons">
+      <button class="icbtn" id="openSearch" aria-label="جستجو"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg></button>
+      <button class="icbtn" id="openFav" aria-label="علاقه‌مندی‌ها"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 20.5S3.5 15.5 3.5 9.4A4.6 4.6 0 0 1 12 6.7a4.6 4.6 0 0 1 8.5 2.7c0 6.1-8.5 11.1-8.5 11.1z"/></svg><span class="badge" id="bFav" style="display:none">۰</span></button>
+      <button class="icbtn" data-stub aria-label="حساب کاربری"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1.2-3.6 4-5.5 7.5-5.5s6.3 1.9 7.5 5.5"/></svg></button>
+      <button class="icbtn" id="openCart" aria-label="سبد خرید"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5.5 8h13l-1.1 12.5H6.6z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="badge" id="bCart" style="display:none">۰</span></button>
+      <button class="icbtn" id="openNav" aria-label="منو"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ================= HERO — restored triptych carousel ================= -->
+<section class="hero" id="hero">
+  <div class="container h-meta">
+    <span>( کالکشنِ بهار ۱۴۰۴ — چهل‌ودو برندِ مطرحِ دنیا، یک‌جا )</span>
+    <span>تهران — ارسالِ ۲۴ ساعته به سراسرِ ایران</span>
+    <span class="hint">اسکرول کن<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v14M6 13l6 6 6-6"/></svg></span>
+  </div>
+
+  <div class="h-eyebrow"><span><i></i>چهار دنیایِ رُزا — صورت، لب، مو، ناخن</span></div>
+
+  <div class="ht-scene">
+    <span class="wm fd" aria-hidden="true">رُزا</span>
+    <div class="trip" tabindex="0" role="group" aria-label="اسلایدهای محصولات رُزا">
+      <div class="side s2" data-seat="previous" aria-hidden="true"></div>
+      <div class="center" data-seat="center" aria-hidden="true"></div>
+      <div class="side s1" data-seat="next" aria-hidden="true"></div>
+      <div class="seal">
+        <svg class="seal-ring" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="60" cy="60" r="52" stroke-dasharray="5 7"/><rect x="55" y="2" width="10" height="10" transform="rotate(45 60 7)" fill="currentColor" stroke="none"/><rect x="55" y="108" width="10" height="10" transform="rotate(45 60 113)" fill="currentColor" stroke="none"/><rect x="2" y="55" width="10" height="10" transform="rotate(45 7 60)" fill="currentColor" stroke="none"/><rect x="108" y="55" width="10" height="10" transform="rotate(45 113 60)" fill="currentColor" stroke="none"/></svg>
+        <div class="seal-core"><b class="fd">۱۰۰٪</b><small>اصالت کالا</small></div>
+      </div>
+    </div>
+
+    <svg class="string" viewBox="0 0 70 96" aria-hidden="true"><path d="M66 92 C 56 52, 30 28, 4 5" fill="none" stroke="var(--rose-gold)" stroke-width="1.3"/></svg>
+
+    <div class="ticket" id="heroTicket">
+      <span class="hole"></span>
+      <div class="t-main">
+        <span class="t-th" id="tImg"></span>
+        <div>
+          <small id="tBrand">مای لیدر</small>
+          <b id="tName">کرم‌پودر مای فشن مای لیدر</b>
+          <div class="t-row"><b id="tPrice">۴۹۸٬۰۰۰</b><i>تومان</i><del id="tOld">۶۶۴٬۰۰۰</del></div>
+        </div>
+      </div>
+      <button class="t-add" id="tAdd" data-add="1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5.5 8h13l-1.1 12.5H6.6z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>افزودن به سبد</button>
+    </div>
+
+    <p class="h-cap" id="heroCap">«پوستی یکدست، شفاف و تمام‌عیار»</p>
+  </div>
+
+  <div class="h-info">
+    <div class="container h-iwrap">
+      <div class="h-meta2" id="hMeta">
+        <span class="idx" id="hIdx">۰۱</span>
+        <h2 class="fd" id="hName">آرایش صورت</h2>
+        <small id="hCount">۱۲۸ کالا</small>
+        <p id="hCap2">«پوستی یکدست، شفاف و تمام‌عیار»</p>
+      </div>
+      <a class="btn ghost ivory sm" id="hCta" href="#" data-catgo="face">دیدنِ محصولات<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    </div>
+  </div>
+
+  <nav class="container hero-cats" id="heroCats">
+    <button class="hcat" data-key="0"><span class="idx">۰۱</span><span class="hname fd">آرایش صورت</span><span class="hcount">۱۲۸ کالا</span><span class="bar"></span></button>
+    <button class="hcat" data-key="1"><span class="idx">۰۲</span><span class="hname fd">آرایش لب</span><span class="hcount">۲۱۴ کالا</span><span class="bar"></span></button>
+    <button class="hcat" data-key="2"><span class="idx">۰۳</span><span class="hname fd">آرایش مو</span><span class="hcount">۹۶ کالا</span><span class="bar"></span></button>
+    <button class="hcat" data-key="3"><span class="idx">۰۴</span><span class="hname fd">آرایش ناخن</span><span class="hcount">۸۷ کالا</span><span class="bar"></span></button>
+  </nav>
+  <span class="vrail" aria-hidden="true">رُزا بیوتی‌شاپ — کالکشنِ بهار ۱۴۰۴</span>
+</section>
+
+<!-- ================= شگفت‌انگیزها ================= -->
+<section class="darksec" id="deals">
+  <div class="container sec-head">
+    <div><div class="eyebrow">فقط تا پایانِ امروز</div><h2>شگفت‌انگیزها</h2></div>
+    <div class="head-tools">
+      <div class="cnav">
+        <button data-snav data-t="#dealRow" data-px="380" data-s="1" aria-label="قبلی"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button data-snav data-t="#dealRow" data-px="380" data-s="-1" aria-label="بعدی"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+      </div>
+      <a class="morelink" href="#" data-q="">همه</a>
+    </div>
+  </div>
+  <div class="hscroll" id="dealRow">
+    <div class="cd-card">
+      <span class="fd">تا ۴۰٪<br>تخفیفِ امروز</span>
+      <small>فرصتِ باقی‌مانده</small>
+      <div class="cd-mini">
+        <div><b id="cdH">۰۰</b><span>ساعت</span></div>
+        <div><b id="cdM">۰۰</b><span>دقیقه</span></div>
+        <div><b id="cdS">۰۰</b><span>ثانیه</span></div>
+      </div>
+      <a href="#" data-q="">همه شگفت‌انگیزها</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= کمپین‌های برند ================= -->
+<section class="promo-placement" aria-label="کمپین‌های محصولات برندها">
+  <a class="promo-wide-link" href="#" data-q="لورال" aria-label="مشاهده‌ی مجموعه‌ی مراقبت موی لورآل">
+    <img src="assets/promo-wide-hair.svg" alt="لورآل پاریس؛ درخشش تازه از ریشه تا نوک، روتین حرفه‌ای مو با تا ۲۰ درصد تخفیف. مشاهده و خرید." loading="lazy">
+  </a>
+</section>
+
+<!-- ================= تازه‌ها ================= -->
+<section class="darksec" id="new">
+  <div class="container sec-head">
+    <div><div class="eyebrow">این هفته رسید</div><h2>تازه‌ها</h2></div>
+    <div class="head-tools">
+      <div class="cnav">
+        <button data-snav data-t="#newRow" data-px="380" data-s="1" aria-label="قبلی"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button data-snav data-t="#newRow" data-px="380" data-s="-1" aria-label="بعدی"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+      </div>
+      <a class="morelink" href="#" data-q="">همه</a>
+    </div>
+  </div>
+  <div class="hscroll" id="newRow"></div>
+</section>
+<div class="container promo-pair under-new" aria-label="کمپین‌های ویژه‌ی تازه‌ها">
+  <a class="promo-card-link" href="#" data-q="اوردینری" aria-label="مشاهده‌ی مجموعه‌ی مراقبت پوست اوردینری">
+    <img src="assets/promo-skincare.svg" alt="اوردینری؛ شفافیت قطره به قطره، سرم‌های هدفمند برای روتین روزانه، ۲۰ درصد تخفیف." loading="lazy">
+  </a>
+  <a class="promo-card-link" href="#" data-q="لانکوم" aria-label="مشاهده‌ی کالکشن لب لانکوم">
+    <img src="assets/promo-lips.svg" alt="لانکوم؛ رنگ لوکس، جلوه ماندگار، مجموعه‌ی رنگ و آرایش لب." loading="lazy">
+  </a>
+</div>
+
+<!-- ================= lipsticks selected from Khanoumi ================= -->
+<section class="darksec khanoumi-sec" id="khanoumiLipsticks">
+  <div class="container sec-head">
+    <div>
+      <div class="eyebrow">منتخب‌هایی از خانومی</div>
+      <h2>رژلب‌های محبوب</h2>
+      <p class="khanoumi-note">نمونه‌ای از محصولات آرایش لب؛ قیمت‌ها ممکن است تغییر کنند.</p>
+    </div>
+    <div class="head-tools">
+      <div class="cnav">
+        <button data-snav data-t="#khanoumiRow" data-px="420" data-s="1" aria-label="قبلی"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button data-snav data-t="#khanoumiRow" data-px="420" data-s="-1" aria-label="بعدی"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+      </div>
+      <a class="morelink" href="https://www.khanoumi.com/categories/makeup/lips-makeup/lipstick" target="_blank" rel="noopener noreferrer">دیدن در خانومی</a>
+    </div>
+  </div>
+  <div class="hscroll khanoumi-row" id="khanoumiRow" aria-label="محصولات رژلب خانومی"></div>
+</section>
+
+<div class="mq-wrap" aria-hidden="true"><div class="mq" id="mq"></div></div>
+
+<!-- ================= دسته‌بندی‌ها ================= -->
+<section class="sec" id="cats">
+  <div class="container sec-head">
+    <div><div class="eyebrow">دسته‌بندی‌ها</div><h2>دنیای رُزا</h2></div>
+  </div>
+  <div class="catrow" id="catrow"></div>
+</section>
+
+<!-- ================= خطوط و برندها ================= -->
+<section class="sec" id="lines" style="padding-top:12px">
+  <div class="container sec-head">
+    <div><div class="eyebrow">کمپین‌های خطوطِ محصول</div><h2>خطوطِ برندها</h2></div>
+    <div class="head-tools">
+      <div class="cnav">
+        <button data-snav data-t="#lineRow" data-px="495" data-s="1" aria-label="قبلی"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button data-snav data-t="#lineRow" data-px="495" data-s="-1" aria-label="بعدی"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="lscroll" id="lineRow"></div>
+</section>
+
+<!-- ================= روتین ================= -->
+<section class="sec routine">
+  <div class="container rot-grid">
+    <div class="rv">
+      <div class="eyebrow">رُزا | سازنده‌ی روتین</div>
+      <h2>روتینِ زیبایی‌ات را بساز</h2>
+      <p>نوع پوستت را انتخاب کن تا رُزا محصولاتِ هم‌خانواده را برایت کنار هم بگذارد — از پاک‌کننده تا سرم و کرم‌پودر.</p>
+      <div class="schips" id="schips">
+        <button class="schip on" data-skin="پوست خشک">پوست خشک</button>
+        <button class="schip" data-skin="پوست معمولی">پوست معمولی</button>
+        <button class="schip" data-skin="پوست چرب">پوست چرب</button>
+      </div>
+      <button class="btn rose" id="rotBtn">دیدنِ پیشنهادها<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+    </div>
+    <div class="rot-visual rv">
+      <div class="arch" id="rotArch"></div>
+      <div class="rot-tag"><b>+۱۲۰ سرم و کرم</b><small>برای هر نوع پوست</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= برندها ================= -->
+<section class="sec" id="brands" style="padding-top:12px">
+  <div class="container">
+    <div class="sec-head rv"><div><div class="eyebrow">برندهای رسمی</div><h2>برندهایی که به آن‌ها اعتماد داریم</h2></div></div>
+    <div class="brow rv" id="brow"></div>
+    <p class="bnote rv">با انتخاب هر برند، محصولاتِ همان برند در جستجو نمایش داده می‌شود.</p>
+  </div>
+</section>
+
+<!-- ================= مجله ================= -->
+<section class="sec mag-sec" id="magazine">
+  <div class="container">
+    <div class="sec-head rv">
+      <div><div class="eyebrow">مجله زیبایی</div><h2>از زبانِ متخصص‌ها</h2></div>
+      <a class="morelink" href="#" data-stub>همه مقالات<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    </div>
+    <div class="mag">
+      <a class="feat rv" href="#" data-stub>
+        <span class="fill" id="magFeat"></span>
+        <div class="feat-body">
+          <span class="tag">آرایش لب</span>
+          <h3>راهنمای انتخاب رژ لب مات برای لب‌های خشک؛ چه بخر و چه نه</h3>
+          <p class="meta">۸ دقیقه مطالعه · مریم احمدی، آرایشگر حرفه‌ای</p>
+        </div>
+      </a>
+      <div class="mlist">
+        <a class="mitem rv" href="#" data-stub>
+          <span class="msq" id="mag1"></span>
+          <div><span class="tag">آرایش صورت</span><h4 style="margin-top:7px">۵ اشتباه رایج که آرایش صورتت را سنگین می‌کند</h4><span class="meta">۴ دقیقه مطالعه</span></div>
+        </a>
+        <a class="mitem rv" href="#" data-stub>
+          <span class="msq" id="mag2"></span>
+          <div><span class="tag">آرایش مو</span><h4 style="margin-top:7px">مراقبت از موها در فصل سرد؛ روتینی که واقعاً جواب می‌دهد</h4><span class="meta">۶ دقیقه مطالعه</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= خبرنامه ================= -->
+<section class="news orn">
+  <div class="container news-in rv">
+    <div class="eyebrow" style="justify-content:center">خبرنامه رُزا</div>
+    <h2>زودتر از همه از تخفیف‌ها باخبر شو</h2>
+    <p>هفته‌ای یک ایمیل؛ فقط منتخبِ ما از کمپین‌ها و محصولات تازه.</p>
+    <form class="nform" id="nlForm" novalidate>
+      <input type="email" id="nlMail" placeholder="ایمیل شما" aria-label="ایمیل">
+      <button class="btn rose" type="submit">عضویت</button>
+    </form>
+    <span class="nerr" id="nlErr">لطفاً یک ایمیل معتبر وارد کن.</span>
+    <div class="perks">
+      <span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5l4.5 4.5L19 7"/></svg>کد تخفیف ۱۵٪</span>
+      <span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5l4.5 4.5L19 7"/></svg>دسترسی زودهنگام</span>
+      <span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5l4.5 4.5L19 7"/></svg>بدون ایمیل مزاحم</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div class="f-about f-logo">
+        <a class="logo" href="#">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--rose)"><circle cx="20" cy="20" r="4.5"/><path d="M20 4v7M20 29v7M4 20h7M29 20h7M9 9l5 5M26 26l5 5M31 9l-5 5M14 26l-5 5"/><circle cx="20" cy="6.5" r="1.6"/><circle cx="20" cy="33.5" r="1.6"/><circle cx="6.5" cy="20" r="1.6"/><circle cx="33.5" cy="20" r="1.6"/></svg>
+          <span class="logo-t"><b>رُزا</b><i>بیوتی‌شاپ</i></span>
+        </a>
+        <p>فروشگاه آنلاین لوازم آرایشی و بهداشتی؛ با ضمانت اصالت کالا، قیمت منصفانه و ارسال سریع به سراسر ایران.</p>
+      </div>
+      <div>
+        <h5>فروشگاه</h5>
+        <a href="#" data-q="صورت">آرایش صورت</a>
+        <a href="#" data-q="لب">آرایش لب</a>
+        <a href="#" data-q="مو">آرایش مو</a>
+        <a href="#" data-q="ناخن">آرایش ناخن</a>
+        <a href="#deals">شگفت‌انگیزها</a>
+      </div>
+      <div>
+        <h5>خدمات مشتریان</h5>
+        <a href="#" data-stub>پیگیری سفارش</a>
+        <a href="#" data-stub>رویه بازگرداندن کالا</a>
+        <a href="#" data-stub>سوالات متداول</a>
+        <a href="#" data-stub>حریم خصوصی</a>
+      </div>
+      <div>
+        <h5>با رُزا</h5>
+        <a href="#" data-stub>درباره ما</a>
+        <a href="#" data-stub>تماس با ما</a>
+        <a href="#magazine">مجله زیبایی</a>
+        <a href="#" data-stub>فرصت‌های شغلی</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <small>© ۱۴۰۴ رُزا بیوتی‌شاپ — پیش‌نمایش طراحی</small>
+      <div class="enamad">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 2.5V11c0 4.8-3 7.6-7 9-4-1.4-7-4.2-7-9V5.5z"/><path d="M9 11.5l2 2 4-4"/></svg>نماد اعتماد<br>الکترونیکی</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>ساماندهی<br>رسانه‌ها</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile nav drawer -->
+<aside class="drawer" id="navDrawer" aria-label="منو">
+  <div class="d-head"><h3 class="fd">منوی رُزا</h3><button class="icbtn" data-close-drawers aria-label="بستن"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="20" height="20"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="nd-body">
+    <details><summary>آرایش صورت</summary><ul><li><a href="#" data-q="کرم‌پودر">کرم‌پودر</a></li><li><a href="#" data-q="سرم">سرم و کانسیلر</a></li><li><a href="#" data-q="پالت">سایه و ریمل</a></li></ul></details>
+    <details><summary>آرایش لب</summary><ul><li><a href="#" data-q="رژ">رژ لب مات</a></li><li><a href="#" data-q="گلاس">لیپ‌گلاس</a></li></ul></details>
+    <details><summary>آرایش مو</summary><ul><li><a href="#" data-q="شامپو">شامپو و ماسک</a></li><li><a href="#" data-q="روغن">روغن و اتو مو</a></li></ul></details>
+    <details><summary>آرایش ناخن</summary><ul><li><a href="#" data-q="لاک">لاک ناخن</a></li><li><a href="#" data-q="تاپ">پایه و تاپ‌کیت</a></li></ul></details>
+    <a class="nd-link" href="#deals" data-nav>شگفت‌انگیزها</a>
+    <a class="nd-link" href="#new" data-nav>تازه‌ها</a>
+    <a class="nd-link" href="#lines" data-nav>خطوط و برندها</a>
+    <a class="nd-link" href="#magazine" data-nav>مجله زیبایی</a>
+  </div>
+</aside>
+
+<!-- Search overlay (scroll-contained) -->
+<div id="searchOv">
+  <div class="s-in">
+    <div class="s-bar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg>
+      <input id="sInput" type="text" placeholder="در میان صدها محصول جستجو کن…" autocomplete="off">
+      <button class="icbtn" data-close-drawers aria-label="بستن"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="20" height="20"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="s-chips"><b>پرطرفدارها:</b><button data-qc="رژ">رژ لب</button><button data-qc="کرم‌پودر">کرم‌پودر</button><button data-qc="سرم">سرم</button><button data-qc="لاک">لاک ناخن</button><button data-qc="شامپو">شامپو</button></div>
+    <div id="sRes"></div>
+  </div>
+</div>
+
+<!-- Cart drawer -->
+<aside class="drawer" id="cartDrawer" aria-label="سبد خرید">
+  <div class="d-head"><h3 class="fd">سبد خرید</h3><button class="icbtn" data-close-drawers aria-label="بستن"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="20" height="20"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div id="cartBody"></div>
+  <div class="d-foot">
+    <div class="trow"><span>جمع سفارش</span><b id="subTotal">۰ تومان</b></div>
+    <div class="trow"><span>هزینه ارسال</span><b id="shipCost">رایگان</b></div>
+    <div class="trow total"><span>مبلغ قابل پرداخت</span><b id="total">۰ تومان</b></div>
+    <button class="btn rose" id="checkoutBtn">ثبت سفارش<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+  </div>
+</aside>
+
+<div id="scrim"></div>
+
+
+<script src="product-line.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
